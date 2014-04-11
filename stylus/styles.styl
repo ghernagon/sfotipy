@@ -1,2 +1,61 @@
-h1
-	color green
+@import "normalize.styl"
+@import "font.styl"
+
+gris = #333333
+gris2 = #818181
+
+a
+	text-decoration none
+
+body
+	font-family 'Varela Round'
+	font-size 16px
+
+.author
+	color gris2
+
+.button-menu 
+	color gris
+	left .5em
+	margin-top -10px
+	position absolute
+	top 50%
+
+.container 
+	padding 1.4rem
+	font-size 0
+	text-align center
+
+figure
+	margin 0px
+
+.header
+	height 3.5em
+	position relative
+	border-bottom 1px solid gris2
+	.title
+		font-size 1.1em
+		text-align center
+		margin 0
+		line-height 3.2em
+
+.name 
+	color gris
+
+.menu 
+	display none
+
+.song 
+	width 8rem
+	display inline-block
+	font-size 1rem
+	margin-right 1em
+	margin-bottom 1em
+	text-align left
+	& img
+		width 128px
+		height 128px
+	&:nth-child(even)
+		margin-right 0
+	& p
+		margin .5em 0
