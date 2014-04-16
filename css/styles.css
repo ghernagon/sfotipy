@@ -259,6 +259,23 @@ body {
   font-family: 'Varela Round';
   font-size: 16px;
 }
+.action {
+  color: #fff;
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+.action.gray {
+  color: #818181 !important;
+}
+.actions {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  background: rgba(0,0,0,0.3);
+  left: 0;
+  text-align: right;
+}
 .author {
   color: #818181;
 }
@@ -269,13 +286,24 @@ body {
   position: absolute;
   top: 50%;
 }
+.center-block {
+  margin: 0 auto;
+  text-align: center;
+  width: 320px;
+}
 .container {
   padding: 1.4rem;
   font-size: 0;
   text-align: center;
 }
+.description {
+  border-bottom: 1px solid #818181;
+}
 figure {
   margin: 0px;
+}
+img {
+  vertical-align: top;
 }
 .header {
   height: 3.5em;
@@ -311,4 +339,56 @@ figure {
 }
 .song p {
   margin: 0.5em 0;
+}
+.padding {
+  padding: 1em;
+}
+.padding .play {
+  padding: 1em 0;
+}
+.playing img {
+  width: 320px;
+  height: 320px;
+}
+.playing .image {
+  position: relative;
+}
+.progress {
+  margin: 1em 0;
+  position: relative;
+}
+.progress .min,
+.progress .max {
+  font-size: 0.8em;
+  top: -5px;
+  position: absolute;
+}
+.progress .min {
+  left: 0;
+}
+.progress .max {
+  right: 0;
+}
+.progress .total {
+  height: 5px;
+  background: #818181;
+  width: 75%;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.progress .state {
+  height: 5px;
+  background: #f00;
+  width: 30%;
+  border-radius: 5px;
+  position: relative;
+}
+.progress .marker {
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: -2px;
 }

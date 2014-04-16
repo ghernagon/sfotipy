@@ -3,6 +3,7 @@
 
 gris = #333333
 gris2 = #818181
+magenta = #FF0000
 
 a
 	text-decoration none
@@ -10,6 +11,24 @@ a
 body
 	font-family 'Varela Round'
 	font-size 16px
+
+.action
+	color white
+	margin-right .5em
+	font-size 1.2em
+	$:last-child
+		margin-right 0
+	&.gray
+		color gris2 !important
+
+.actions
+	position absolute
+	bottom 0
+	right 0
+	padding 1em
+	background rgba(black, .3)
+	left 0
+	text-align right
 
 .author
 	color gris2
@@ -21,13 +40,24 @@ body
 	position absolute
 	top 50%
 
+.center-block
+	margin 0 auto
+	text-align center
+	width 320px
+
 .container 
 	padding 1.4rem
 	font-size 0
 	text-align center
 
+.description
+	border-bottom 1px solid gris2
+
 figure
 	margin 0px
+
+img
+	vertical-align top
 
 .header
 	height 3.5em
@@ -59,3 +89,53 @@ figure
 		margin-right 0
 	& p
 		margin .5em 0
+
+.padding
+	padding 1em
+	.play
+		padding 1em 0
+
+.playing
+	$.small
+		width 20em
+	img 
+		width 320px
+		height 320px
+	.image
+		position relative
+
+.progress
+	margin 1em 0
+	position relative
+	.min
+	.max
+		font-size .8em
+		top -5px
+		position absolute
+	.min
+		left 0
+	.max
+		right 0
+	.total
+		height 5px
+		background gris2
+		width 75%
+		border-radius 5px
+		margin 0 auto
+	.state
+		height 5px
+		background magenta
+		width 30%
+		border-radius 5px
+		position relative
+	.marker
+		width 10px
+		height 10px
+		background gris
+		border-radius 50%
+		position absolute
+		right 0
+		top -2px
+
+
+
